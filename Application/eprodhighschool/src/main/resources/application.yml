@@ -1,0 +1,26 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: eProd-High-School
+
+    # Database
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/eprod
+    password: eprod
+    username: postgres
+
+  jpa:
+    generate-ddl: true
+    open-in-view: false
+    database: postgresql
+    show-sql: false
+    properties:
+      hibernate:
+          jdbc:
+            lob:
+              non_contextual_creation: true
+
+
